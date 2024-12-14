@@ -1,0 +1,1 @@
+This repository demonstrates a common CSS bug related to cross-browser compatibility. The `bug.css` file contains CSS that works in some browsers but fails in others due to unsupported properties. The `bugSolution.css` file offers a solution by using widely supported alternatives or feature detection.
