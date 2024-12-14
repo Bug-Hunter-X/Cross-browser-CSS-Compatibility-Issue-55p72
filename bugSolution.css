@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+/* Instead of using the unsupported property, use a more widely supported alternative or feature detection. */
+.element {
+  /* This was the unsupported property */
+  /* solution: Use a fallback */
+  background-image: url('image.png'); /* Fallback for older browsers */
+  background-image: linear-gradient(to right, red, yellow); /* Modern browsers */
+}
+
+/* OR Use feature detection with JavaScript*/
+/* Check for support of the property before applying it.*/
+if (document.documentElement.style.hasOwnProperty('unsupportedProperty')) {
+  // Apply the unsupported property only if it's supported
+  document.querySelector('.element').style.unsupportedProperty = 'value';
+} else {
+  // Apply a fallback style
+  document.querySelector('.element').style.backgroundColor = 'gray';
+}
